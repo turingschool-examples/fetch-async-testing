@@ -11,6 +11,12 @@ module.exports = {
   mode: 'development',
   // CSS and file (image) loaders
   module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
   },
   // Below is needed for webpack-dev-server
   plugins: [
