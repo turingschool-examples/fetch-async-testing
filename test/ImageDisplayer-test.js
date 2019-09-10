@@ -28,6 +28,6 @@ describe('ImageDisplayer', () => {
   it('should get a response to a request when created', () => {
     chai.spy.on(global, "fetch")
     imageDisplayer.getPicture(imageDisplayer.root);
-    expect(global.fetch).to.be.called();
+    expect(global.fetch).to.be.called(1);
   });
 });
